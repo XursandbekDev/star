@@ -5,7 +5,7 @@ function Home() {
     const navigate = useNavigate("");
     const Logout = () => {
         localStorage.removeItem("token");
-        navigate("/auth");
+        navigate("/");
     };
     return (
         <>
@@ -13,6 +13,7 @@ function Home() {
                 <button onClick={Logout} className="">
                     LOGOUT
                 </button>
+                <h2>Tizimga kirdingiz!</h2>
             </div>
         </>
     );

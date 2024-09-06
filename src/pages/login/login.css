@@ -1,11 +1,9 @@
-/* Umumiy uslublar */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Container */
 .container {
     background-color: #ffffff;
     width: 100%;
@@ -15,13 +13,11 @@
     flex-grow: 1;
 }
 
-/* Left section */
 .left-section {
     padding-left: 110px;
     padding-top: 63px;
 }
 
-/* Top section */
 .top-section {
     display: flex;
     align-items: center;
@@ -30,7 +26,6 @@
     margin-bottom: 70px;
 }
 
-/* Right section */
 .right-section {
     width: 100%;
     height: 100vh;
@@ -59,7 +54,6 @@
     );
 }
 
-/* Logo */
 .logo {
     display: flex;
     flex-direction: row;
@@ -76,7 +70,6 @@
     width: 95px;
 }
 
-/* Left text container */
 .left-text-container {
     display: flex;
     flex-direction: column;
@@ -87,7 +80,6 @@
     width: 385px;
 }
 
-/* Typography */
 p {
     color: #939393;
     font-weight: 400;
@@ -109,14 +101,13 @@ h2 {
     color: #000000;
 }
 
-/* Select */
 select {
     border: none;
     outline: none;
     color: #939393;
+    background-color: transparent;
 }
 
-/* Input label */
 .input-label {
     position: relative;
     width: 300px;
@@ -143,7 +134,6 @@ select {
     color: #545454;
 }
 
-/* Password toggle button */
 .password-toggle-btn {
     position: absolute;
     right: 10px;
@@ -160,7 +150,6 @@ select {
     color: #939393;
 }
 
-/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -191,13 +180,12 @@ form > button:hover {
     background-color: #0021f4;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .right-section {
         display: none;
     }
     .left-section {
-        padding-inline: 20px;
+        padding: 20px; 
         padding-top: 20px;
     }
     .top-section {
@@ -205,7 +193,7 @@ form > button:hover {
         margin-bottom: 30px;
     }
     .left-text {
-        width: 100%;
+        width: 90%;
     }
     .input-label input {
         width: 100%;
@@ -219,6 +207,7 @@ form > button:hover {
 @media (max-width: 1024px) {
     .left-section {
         padding-left: 50px;
+        padding-right: 50px; 
         padding-top: 50px;
     }
     .top-section {
@@ -226,6 +215,6 @@ form > button:hover {
         margin-bottom: 50px;
     }
     .left-text {
-        width: 90%;
+        width: 80%;
     }
 }

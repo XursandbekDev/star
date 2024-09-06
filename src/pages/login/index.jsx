@@ -17,9 +17,9 @@ function Login() {
     useEffect(() => {
         const token = localStorage.getItem("token");
         if (token) {
-            navigate("/");
+            navigate("/home");
         } else {
-            navigate("/auth");
+            navigate("/");
         }
     }, [navigate]);
     const toggleShowPassword = () => {
@@ -41,7 +41,7 @@ function Login() {
                 admin.password === enteredPassword
             ) {
                 localStorage.setItem("token", "admin-token");
-                navigate("/");
+                navigate("/home");
             } else {
                 setError(t("LoginError"));
             }
