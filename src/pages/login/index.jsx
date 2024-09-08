@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./login.css";
 import Mountain from "../../assets/Mountain.png";
 import StarOne from "../../assets/StarOne.svg";
+import RightBackground from "../../assets/right-background.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
@@ -104,6 +105,7 @@ function Login() {
                                 name="password"
                                 placeholder={t("Password")}
                                 required
+                                autoComplete="no"
                             />
                             <button
                                 type="button"
@@ -121,12 +123,12 @@ function Login() {
                         <button type="submit">{t("LoginBtn")}</button>
                     </form>
 
-                    {error && <p style={{ color: "red" }}>{error}</p>}
+                    {error && <p style={{ color: "red", fontSize:"12px"  }}>{error}</p>}
                 </div>
 
                 <div className="right-section">
                     <img
-                        src={Mountain}
+                        src={RightBackground}
                         alt="Background-image"
                         className="background-image"
                     />
